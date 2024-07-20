@@ -10,7 +10,7 @@
     "start": "next start",
     "lint": "next lint",
     "postinstall": "prisma generate",
-    "buildCommand": "sh vercel.sh",
+    "build": "sh vercel.sh",
     "build:production": "prisma generate && npm run db:deploy && next build",
     "build:preview": "next build"
   },
