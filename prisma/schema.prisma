@@ -15,8 +15,8 @@ datasource db {
 }
 
 model User {
-  id            Int      @id @default(autoincrement())
-  externalId    String?  @db.VarChar(255)
+  id            String      @id @default(uuid())
+  externalId    String  @db.VarChar(255)
   firstName     String?  @db.VarChar(255)
   lastName      String?  @db.VarChar(255)
 }
